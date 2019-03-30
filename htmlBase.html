@@ -8,13 +8,13 @@
     <title>Luxury</title>
     <link rel="stylesheet" href="bootstrap/CSS/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="wow-animation/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <!-- fonts -->
 
     <link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Sintony:700" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet"> 
+
     <!-- fonts -->
 </head>
 <body>
@@ -24,14 +24,14 @@
                 <div class="nav-wrapper col-lg-12 p-0">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="#">
-                            <div class="col-3 navbar-brand logo-wr mr-5">
+                            <div class="col-xl-3 navbar-brand logo-wr mr-xl-5 mr-lg-2">
                                 <img src="pictures/logo.png" alt="LOGO" >
                             </div>
                         </a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse col-lg-6 ml-3 mt-auto mb-auto pl-0" id="navbarText">
+                            <div class="collapse navbar-collapse col-xl-6 ml-lg-0 ml-xl-3 mt-auto mb-auto pl-0" id="navbarText">
                                 <ul class="navbar-nav nav-ul">
                                     <li class="nav-item ">
                                         <a class="nav-link text-light" href="#">HOME <span class="sr-only">(current)</span></a>
@@ -56,7 +56,7 @@
                                     </li>
                                 </ul>
                         </div>
-                        <div class="col-3 book-wr d-flex justify-content-around p-0">
+                        <div class="col-xl-3 book-wr d-flex justify-content-around p-0">
                             <span id="title" class="fas fa-shopping-cart ul-list-wr mt-auto mb-auto"></span>
                                 <ul id="ulList" class="ulList">
                                     <li>Торт</li>
@@ -74,23 +74,63 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="slider-wr col-lg-12">
-                <div class="slider">
-                    
-                </div>
-                <div class="call-info">
-                    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="slider-wr col-lg-12 p-0" style="background-image: url(./pictures/1.png)">
+                    <div class="slider col-lg-12 position-relative p-0">
+                        <div id="sliderButtons col-lg-1" class="slider-buttons d-flex flex-column position-absolute">
+                            <div class="btn do">
+                                <div id="btnDot" class="firstPhoto dot"></div>
+                            </div>
+                            <div class="btn do">
+                                <div id="btnDot" class="secondPhoto"></div>
+                            </div>
+                            <div class="btn do">
+                                <div id="btnDot" class="thirdPhoto"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="call-info-wr">
+                        <div class="container">
+                            <div class="row">
+                                    <div class="sticker-wr col-lg-3">
+                                        <div class="food-sticker">
+                                            <div class="line">
+                                               <p>Exlore <br> food Menu</p>
+                                            </div>
+                                        </div>
+                                        <div class="circle-wr">
+                                                <div class="circle">
+                                                    <img src="./pictures/icon_food.png" alt="icon">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="call-info d-flex offset-1 col-8 mt-auto mb-auto">
+                                        <div class="reviews-wr d-flex">
+                                            <i class="fas far fa-comments fa-3x m-auto"></i>
+                                                <p class="m-auto">READ <br> <span>REVIEWS</span></p>
+                                            <div class="btn-wr mt-auto mb-auto">
+                                                <button></button>
+                                            </div>
+                                        </div>
+                                        <div class="home-deliver d-flex m-auto">
+                                            <i class="fas fas fa-phone-volume fa-3x"></i>
+                                            <span>CALL US NOW FOR <br> <span>HOME DELIVER</span></span>
+                                        </div>
+                                        <div class="phone m-auto">
+                                            <p>1-008 005 006</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
     <script src="bootStrap/JS/bootstrap.min.js"></script>         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="javaMain.js"></script>
 </body>
 </html>

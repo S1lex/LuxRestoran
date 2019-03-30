@@ -39,7 +39,8 @@
       font-size: 14px; }
     .book-wr .book-your-table span img {
       height: 17px;
-      margin: auto; }
+      margin: auto;
+      margin-right: 0; }
 .book-wr .ulList {
   padding: 0;
   position: relative; }
@@ -74,7 +75,160 @@
   color: black; }
 
 .slider-wr {
-  background: #7d8587;
+  background-image: url(../pictures/sheet.jpg);
   height: 570px; }
+  .slider-wr .slider {
+    height: inherit; }
+    .slider-wr .slider .slider-buttons {
+      margin-left: 30px;
+      box-sizing: border-box;
+      top: 50%; }
+      .slider-wr .slider .slider-buttons .btn {
+        position: relative;
+        border: solid 2px #fea100;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background: none;
+        padding: 0;
+        margin-bottom: 4px; }
+        .slider-wr .slider .slider-buttons .btn .dot {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          bottom: 0px;
+          right: 0px;
+          border: solid 1px #fea100;
+          border-radius: 50%;
+          width: 4px;
+          height: 4px;
+          margin: auto;
+          background: #fea100; }
+  .slider-wr .call-info-wr {
+    height: 100px;
+    background: #edf1f3; }
+    .slider-wr .call-info-wr .container {
+      height: inherit; }
+      .slider-wr .call-info-wr .container .row {
+        height: inherit; }
+        .slider-wr .call-info-wr .container .row .sticker-wr {
+          height: inherit;
+          position: relative; }
+          .slider-wr .call-info-wr .container .row .sticker-wr .food-sticker {
+            position: absolute;
+            bottom: 20px;
+            width: 200px;
+            height: 200px;
+            background: #fe4c8d;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 70%, 0 100%);
+            clip-path: polygon(0px 0, 200px 0, 200px 100%, 100px 85%, 0 100%); }
+            .slider-wr .call-info-wr .container .row .sticker-wr .food-sticker .line {
+              position: relative;
+              margin: 10px;
+              border: dashed 2px #ffa6c6;
+              -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 69%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+              height: 175px;
+              width: 180px; }
+              .slider-wr .call-info-wr .container .row .sticker-wr .food-sticker .line p {
+                font-family: "Sintony", sans-serif;
+                font-size: 22px;
+                font-weight: bold;
+                position: absolute;
+                top: 30%;
+                right: 15%;
+                bottom: 0;
+                left: 13%;
+                text-align: center;
+                color: white; }
+          .slider-wr .call-info-wr .container .row .sticker-wr .circle-wr {
+            position: absolute;
+            bottom: 170px;
+            left: 26%;
+            z-index: 600; }
+            .slider-wr .call-info-wr .container .row .sticker-wr .circle-wr .circle {
+              width: 80px;
+              height: 80px;
+              border: solid 4px #fe4c8d;
+              border-radius: 50%;
+              background: black; }
+              .slider-wr .call-info-wr .container .row .sticker-wr .circle-wr .circle img {
+                margin: 9px 8px 0 13px; }
+        .slider-wr .call-info-wr .container .row .call-info .reviews-wr {
+          margin-right: 30px;
+          width: 210px; }
+          .slider-wr .call-info-wr .container .row .call-info .reviews-wr p {
+            font-family: "Sintony", sans-serif;
+            font-weight: bold;
+            color: #14141d;
+            font-size: 16px;
+            line-height: 1rem;
+            margin-left: 5px !important;
+            margin-right: 17px !important; }
+            .slider-wr .call-info-wr .container .row .call-info .reviews-wr p span {
+              color: #fea100; }
+          .slider-wr .call-info-wr .container .row .call-info .reviews-wr .btn-wr {
+            background: #fea100;
+            width: 45px;
+            height: 45px;
+            border: solid 0px;
+            border-radius: 50%;
+            position: relative; }
+            .slider-wr .call-info-wr .container .row .call-info .reviews-wr .btn-wr button {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 35px;
+              width: 35px;
+              margin: auto;
+              border: solid 1px white;
+              border-radius: 50%;
+              background: none; }
+            .slider-wr .call-info-wr .container .row .call-info .reviews-wr .btn-wr button::after {
+              position: absolute;
+              top: -2px;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              content: ">";
+              font-weight: bold;
+              font-size: 22px;
+              margin: auto; }
+        .slider-wr .call-info-wr .container .row .call-info .home-deliver {
+          line-height: 1rem;
+          margin-left: 35px;
+          width: 220px;
+          padding: 13px !important;
+          position: relative; }
+          .slider-wr .call-info-wr .container .row .call-info .home-deliver span {
+            font-size: 14px;
+            font-family: "Sintony", sans-serif;
+            font-weight: bold;
+            margin: auto auto auto 10px; }
+            .slider-wr .call-info-wr .container .row .call-info .home-deliver span span {
+              color: #fea100; }
+        .slider-wr .call-info-wr .container .row .call-info .home-deliver:after {
+          content: "";
+          position: absolute;
+          top: 25%;
+          right: 7%;
+          border: solid 1px #7d8587;
+          height: 35px; }
+        .slider-wr .call-info-wr .container .row .call-info .home-deliver:before {
+          content: "";
+          position: absolute;
+          top: -17%;
+          left: 0;
+          border: solid 1px #7d8587;
+          height: 100px; }
+        .slider-wr .call-info-wr .container .row .call-info .phone {
+          width: 240px; }
+          .slider-wr .call-info-wr .container .row .call-info .phone p {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: bold;
+            color: #14141d; }
 
 /*# sourceMappingURL=main.css.map */
