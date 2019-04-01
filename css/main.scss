@@ -123,153 +123,155 @@
             }
         }
     }
-    .call-info-wr {
-        height: 100px;
-        background: #edf1f3;
-        .container {
+    
+}
+.call-info-wr {
+    display: block;
+    height: 100px;
+    background: #edf1f3;
+    .container {
+        height: inherit;
+        .row {
             height: inherit;
-            .row {
+            .sticker-wr {
                 height: inherit;
-                .sticker-wr {
-                    height: inherit;
-                    position: relative;
-                    .food-sticker {
-                        position: absolute;
-                        bottom: 20px;
-                        width: 200px;
-                        height: 200px;
-                        background: #fe4c8d;
-                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 70%, 0 100%);
-                        clip-path: polygon(0px 0, 200px 0, 200px 100%, 100px 85%, 0 100%);
-                        .line {
-                            position: relative;
-                            margin: 10px;
-                            border: dashed 2px #ffa6c6;
-                            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 69%, 0 100%);
-                            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
-                            height: 175px;
-                            width: 180px;
-                            p {
-                                font-family: "Sintony", sans-serif;
-                                font-size: 22px;
-                                font-weight: bold;
-                                position: absolute;
-                                top: 30%;
-                                right: 15%;
-                                bottom: 0;
-                                left: 13%;
-                                text-align: center;
-                                color: white;
-                                
-                            }
-                        }
-                    }
-                    .circle-wr {
-                        position: absolute;
-                        bottom: 170px;
-                        left:26%;
-                        z-index: 600;
-                        .circle {
-                            width: 80px;
-                            height: 80px;
-                            border: solid 4px #fe4c8d;
-                            border-radius: 50%;
-                            background: black;
-                            img {
-                                margin: 9px 8px 0 13px;
-                            }
+                position: relative;
+                .food-sticker {
+                    position: absolute;
+                    bottom: 20px;
+                    width: 200px;
+                    height: 200px;
+                    background: #fe4c8d;
+                    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 52% 70%, 0 100%);
+                    clip-path: polygon(0px 0, 200px 0, 200px 100%, 100px 85%, 0 100%);
+                    .line {
+                        position: relative;
+                        margin: 10px;
+                        border: dashed 2px #ffa6c6;
+                        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 69%, 0 100%);
+                        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 85%, 0 100%);
+                        height: 175px;
+                        width: 180px;
+                        p {
+                            font-family: "Sintony", sans-serif;
+                            font-size: 22px;
+                            font-weight: bold;
+                            position: absolute;
+                            top: 30%;
+                            right: 15%;
+                            bottom: 0;
+                            left: 13%;
+                            text-align: center;
+                            color: white;
+                            
                         }
                     }
                 }
-                .call-info {
-                    .reviews-wr {
-                        margin-right: 30px;
-                        width: 210px;
-                        p {
-                            font-family: "Sintony", sans-serif;
-                            font-weight: bold;
-                            color: #14141d;
-                            font-size: 16px;
-                            line-height: 1rem;
-                            margin-left: 5px!important;
-                            margin-right: 17px!important;
-                            span {
-                                color: #fea100;
-                            }
-                        }
-                        .btn-wr {
-                            background: #fea100;
-                            width: 45px;
-                            height: 45px;
-                            border: solid 0px;
-                            border-radius: 50%;
-                            position: relative;
-                            button {
-                                position: absolute;
-                                top: 0;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                height: 35px;
-                                width: 35px;
-                                margin: auto;
-                                border: solid 1px white;
-                                border-radius: 50%;
-                                background: none;
-                            }
-                            button::after {
-                                position: absolute;
-                                top: -2px;
-                                bottom: 0;
-                                left: 0;
-                                right: 0;
-                                content: ">";
-                                font-weight: bold;
-                                font-size: 22px;
-                                margin: auto;
-                            }
+                .circle-wr {
+                    position: absolute;
+                    bottom: 170px;
+                    left:26%;
+                    z-index: 600;
+                    .circle {
+                        width: 80px;
+                        height: 80px;
+                        border: solid 4px #fe4c8d;
+                        border-radius: 50%;
+                        background: black;
+                        img {
+                            margin: 9px 8px 0 13px;
                         }
                     }
-                    .home-deliver {
+                }
+            }
+            .call-info {
+                .reviews-wr {
+                    margin-right: 30px;
+                    width: 210px;
+                    p {
+                        font-family: "Sintony", sans-serif;
+                        font-weight: bold;
+                        color: #14141d;
+                        font-size: 16px;
                         line-height: 1rem;
-                        margin-left: 35px;
-                        width: 220px;
-                        padding: 13px !important;
-                        position: relative;
+                        margin-left: 5px!important;
+                        margin-right: 17px!important;
                         span {
-                            font-size: 14px;
-                            font-family: "Sintony", sans-serif;
-                            font-weight: bold;
-                            margin: auto auto auto 10px;
-                            span {
-                                color: #fea100;
-                            }
+                            color: #fea100;
                         }
                     }
-                    .home-deliver:after {
-                        content: "";
-                        position: absolute;
-                        top: 25%;
-                        right: 7%;
-                        border: solid 1px #7d8587; 
-                        height: 35px;
-                    }
-                    .home-deliver:before {
-                        content: "";
-                        position: absolute;
-                        top: -17%;
-                        left: 0;
-                        border: solid 1px #7d8587; 
-                        height: 100px;
-                    }
-                    .phone {
-                        width: 240px;
-                        p {
-                            font-family: 'Playfair Display', serif;
-                            font-size: 32px;
-                            font-weight: bold;
-                            color: #14141d;
+                    .btn-wr {
+                        background: #fea100;
+                        width: 45px;
+                        height: 45px;
+                        border: solid 0px;
+                        border-radius: 50%;
+                        position: relative;
+                        button {
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            height: 35px;
+                            width: 35px;
+                            margin: auto;
+                            border: solid 1px white;
+                            border-radius: 50%;
+                            background: none;
                         }
+                        button::after {
+                            position: absolute;
+                            top: -2px;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            content: ">";
+                            font-weight: bold;
+                            font-size: 22px;
+                            margin: auto;
+                        }
+                    }
+                }
+                .home-deliver {
+                    line-height: 1rem;
+                    margin-left: 35px;
+                    width: 220px;
+                    padding: 13px !important;
+                    position: relative;
+                    span {
+                        font-size: 14px;
+                        font-family: "Sintony", sans-serif;
+                        font-weight: bold;
+                        margin: auto auto auto 10px;
+                        span {
+                            color: #fea100;
+                        }
+                    }
+                }
+                .home-deliver:after {
+                    content: "";
+                    position: absolute;
+                    top: 25%;
+                    right: 7%;
+                    border: solid 1px #7d8587; 
+                    height: 35px;
+                }
+                .home-deliver:before {
+                    content: "";
+                    position: absolute;
+                    top: -17%;
+                    left: 0;
+                    border: solid 1px #7d8587; 
+                    height: 100px;
+                }
+                .phone {
+                    width: 240px;
+                    p {
+                        font-family: 'Playfair Display', serif;
+                        font-size: 32px;
+                        font-weight: bold;
+                        color: #14141d;
                     }
                 }
             }
@@ -278,5 +280,200 @@
 }
 
 
-
     // HEADER - - - - - - - - - - - - -- - - - -  - - - - - - -
+
+
+
+    // ABOUT-REST - - - - - - - - - - - - - - - - - - - - - - - 
+.about-rest {
+    height: 520px;
+    .container {
+        height: inherit;
+        .row {
+            height: inherit;
+        }
+    }
+}
+.left-item {
+    margin-top: 110px;
+    .text-wr {
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+            font-weight: bold;
+            color: #14141d;
+            margin-bottom: 25px;
+        }
+        p {
+            font-family: 'Sintony', serif;
+            font-size: 14px;
+            color: #676d73;
+            line-height: 25px;
+        }
+    }
+}
+
+.readMore {
+    margin-top: 30px;
+    .btn-read {
+        width: 150px;
+        height: 50px;
+        background: #fea100;
+        border: solid 0px;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Sintony', serif;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    img {
+        width: 236px;
+        height: 71px;
+        margin: auto auto auto 45px;
+    }
+}
+.img-wr {
+    margin-top: 67px;
+    .imgs {
+        img {
+            display: block;
+            width: 270px;
+            height: 150px;
+            border: solid 1px rgba(109, 109, 109, 0.164);
+        }
+    }
+    .imgs:first-child {
+        margin-top: 34px;
+    }
+}
+
+     // ABOUT-REST - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+    //  MENU - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+    .menu-wr {
+        position: relative;
+    }
+    .today-back-wr {
+        height: 440px;
+        background-image: url(../backgrounds/back3.png);
+    }
+    .food-menu {
+        height: 1230px;
+    }
+    .today-container {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        right: 0;
+    }
+    .today-slider-wr {
+        .slider-text {
+            margin-bottom: 20px;
+            h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            }
+        }
+        .special-btn-wr {
+            position: absolute;
+            right: 0;
+            top: 20px;
+            .btn-today {
+                position: relative;
+                border: solid 2px #fea100;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                background: none;
+                padding: 0;
+                margin-bottom: 4px;
+                .dot {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    bottom: 0px;
+                    right: 0px;
+                    border: solid 1px #fea100;
+                    border-radius: 50%;
+                    width: 4px;
+                    height: 4px;
+                    margin: auto;
+                    background: #fea100;
+                }
+            }
+        }
+    }
+.special-card {
+    height: 730px;
+    padding: 0;
+    margin: 0;
+    img {
+        width: 100%;
+        height: 420px;
+        background-size: 100%;
+    }
+    .card-content {
+        -webkit-box-shadow: 0px 6px 13px 0px  #eaeaea; 
+        box-shadow: 0px 6px 13px 0px #eaeaea;
+        height: 310px;
+        .card-info {
+            padding: 50px;
+            h5 {
+                font-family: 'Playfair Display', serif;
+                font-size: 25px;
+                font-weight: bold;
+                color: #14141d;
+            }
+            p {
+                font-family: 'Sintony', serif;
+                font-size: 14px;
+                color: #7d8287;
+                margin: 0;
+            }
+        }
+        hr {
+            margin: 0;
+            border: solid 1px #e1e1e1;
+        }
+        .card-price {
+            padding: 20px;
+            p {
+                text-align: left;
+                font-family: 'Sintony', serif;
+                font-weight: bold;
+                font-size: 13px;
+                width: 90px;
+                border-right: solid 1px #e1e1e1;
+                margin: 0;
+                span {
+                    color: #fe70a4;
+                }
+            }
+            h4 {
+                font-family: 'Playfair Display', serif;
+                font-size: 26px;
+                font-weight: bold;
+                margin: 0;
+                color: #14141d;
+            }
+            h3 {
+                font-family: 'Playfair Display', serif;
+                font-size: 30px;
+                font-weight: bold;
+                color: #fea100;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+    //  MENU - - - - - - - - - - - - - - - - - - - - - - - - - - 
