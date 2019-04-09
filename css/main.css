@@ -282,11 +282,13 @@
     margin-top: 34px; }
 
 .menu-wr {
-  position: relative; }
+  position: relative;
+  height: 870px; }
 
 .today-back-wr {
   height: 440px;
-  background-image: url(../backgrounds/back3.png); }
+  background-image: url(../backgrounds/back3.png);
+  background-attachment: fixed; }
 
 .food-menu {
   height: 1230px; }
@@ -382,5 +384,73 @@
         font-weight: bold;
         color: #fea100;
         margin: 0; }
+
+.food-menu-wr {
+  margin-top: 60px;
+  position: relative; }
+
+.food-advertising {
+  position: absolute;
+  left: 0;
+  width: 163px;
+  height: 414px; }
+  .food-advertising img {
+    width: 163px;
+    height: 414px; }
+
+.food-menu hr {
+  border: dotted 1px; }
+
+.choose-section {
+  border-bottom: dashed 1px #a3b0ba;
+  padding-bottom: 25px;
+  margin-bottom: 50px; }
+
+.sections ul {
+  text-align: center;
+  margin: 0; }
+  .sections ul li {
+    display: inline-grid;
+    margin: 25px 25px 0px 25px;
+    height: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: bold; }
+    .sections ul li i {
+      color: orange; }
+  .sections ul li:hover i {
+    color: #fe77a8; }
+
+.dishes-wr {
+  border-bottom: solid 1px #eeeeee;
+  margin-bottom: 20px;
+  min-width: 350px;
+  max-width: 530px; }
+  .dishes-wr .dishes-name h6 {
+    font-family: 'Sintony', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #14141d;
+    margin-bottom: 0; }
+  .dishes-wr .dishes-name p {
+    font-family: 'Sintony', sans-serif;
+    font-size: 14px;
+    color: #676d73; }
+  .dishes-wr .dishes-price h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fea100; }
+
+.explore-btn-wr button {
+  width: 200px;
+  height: 50px;
+  background: #fea100;
+  color: white;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border: solid 0px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=main.css.map */

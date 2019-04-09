@@ -70,7 +70,6 @@ let cardChanger = (item) => {
   if(item.children[0].classList.contains("firstPhoto")) {
     arrayCard["first"][4][0]();
     arrayCard["second"][4][0]();
-    console.log(arrayCard["first"][4][0]);
   } if (item.children[0].classList.contains("secondPhoto")) {
     arrayCard["third"][4][0]();
     arrayCard["fourth"][4][0]();
@@ -94,13 +93,12 @@ let arrayCard = {
       [imgCardsFirst, "./backgrounds/back1.png"],
       [cardNameFirst, "First food"],
       [infoCardsFirts, "emLoremLoremLoremLoremLoremLoremLoremLoremLorem iLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem iLoremLoremLoremLoremLoremLoremLoremLoremLoremLorem"],
-      [priceCardsFirst, "<sup>$</sup>81"],
+      [priceCardsFirst, "<sup>$</sup>91.00"],
       [() => {
         arrayCard["first"][0][0].src = arrayCard["first"][0][1];
         arrayCard["first"][1][0].innerHTML = arrayCard["first"][1][1];
         arrayCard["first"][2][0].innerText = arrayCard["first"][2][1];
         arrayCard["first"][3][0].innerHTML = arrayCard["first"][3][1];
-        console.log("yeah!");
       }]
   ],
   "second": [
