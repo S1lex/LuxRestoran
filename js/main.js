@@ -163,3 +163,35 @@ let arrayCard = {
   ]
   };
 specialCards();
+
+
+let leftArrow = document.getElementById("clientArrowLeft");
+let rightArrow = document.getElementById("clientArrowRight");
+let contentWr = document.querySelectorAll("#client-reviews");
+let currentSlider = 0;
+
+let clientSlider = () => {
+    rightArrow.addEventListener("click", () => {
+      nextSlide();
+    });
+    leftArrow.addEventListener("click", () => {
+      previousSlide();
+    });
+}
+
+let nextSlide = () => {
+  contentWr[currentSlider].classList.remove("content-visible");
+  currentSlider = ((currentSlider+1)+contentWr.length)%contentWr.length;
+  contentWr[currentSlider].classList.add("content-visible");
+  console.log(contentWr[currentSlider].previousElementSibling);
+}
+
+let previousSlide = () => {
+  contentWr[currentSlider].classList.remove("content-visible");
+  contentWr[currentSlider].classList.remove("animat");
+  currentSlider = ((currentSlider-1)+contentWr.length)%contentWr.length;
+  contentWr[currentSlider].classList.add("content-visible");
+}
+
+
+clientSlider();

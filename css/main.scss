@@ -90,7 +90,6 @@
 }
 
 .slider-wr {
-    background-image: url(../pictures/sheet.jpg);
     height: 570px;
     .slider {
         height: inherit;
@@ -265,20 +264,18 @@
                     border: solid 1px #7d8587; 
                     height: 100px;
                 }
-                .phone {
-                    width: 240px;
-                    p {
-                        font-family: 'Playfair Display', serif;
-                        font-size: 32px;
-                        font-weight: bold;
-                        color: #14141d;
-                    }
-                }
+                
             }
         }
     }
 }
-
+.phone {
+    width: 240px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #14141d;
+}
 
     // HEADER - - - - - - - - - - - - -- - - - -  - - - - - - -
 
@@ -362,7 +359,6 @@
         background-attachment: fixed;
     }
     .food-menu {
-        height: 1230px;
     }
     .today-container {
         position: absolute;
@@ -477,6 +473,7 @@
 
 .food-menu-wr {
     margin-top: 60px;
+    margin-bottom: 100px;
     position: relative;
 }
 .food-advertising {
@@ -566,3 +563,320 @@
     }
 }
     //  MENU - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+    // HAPPY CLIENT - - - - - - - - - - - - - - - - - - - - - - -
+
+    .client-wr {
+        height: 460px;
+        background: url(../backgrounds/happyClientBackground.png) no-repeat;
+        position: relative;
+        .client-img {
+            position: absolute;
+            top: -35%;
+            left: 70%;
+            border: solid 1px black;
+            width: 241px;
+            height: 241px;
+        }
+    }
+    .client-pos {
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        right: 10%;
+        bottom: 0%;
+    }
+    .slider-client-wr {
+        .client-arrow {
+            color: white;
+            font-size: 120px;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-weight: 100;
+        }
+        .slider-client {
+            position: relative;
+            h2 {
+                font-family: 'Playfair Display', serif;
+                font-weight: bold;
+                font-size: 35px;
+                color: white;
+            }
+            p {
+                font-family: 'Sintony', serif;
+                font-size: 15px;
+                color: white;
+                line-height: 25px;
+            }
+            .client-text:before {
+                content:"❝";
+                position: absolute;
+                left: -7%;
+                font-size: 55px;
+            }
+            .client-text:after {
+                content: "❞ ";
+                position: absolute;
+                left: 103%;
+                top: 105%;
+                font-size: 55px;
+            }
+        }
+    }
+    .client-avatar {
+        p {
+            font-family: 'Sintony', serif;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    .star-wr {
+        color: #fff221;
+    }
+    .client-content {
+        padding: 5px;
+        display: none;
+        transition: 0.5s;
+        transition: 0.3s;
+        -webkit-animation-name: fade;
+        animation-duration: 1s;
+    }
+    @keyframes fade {
+        from{opacity: 0.2;
+        background: white;
+        font-size: 2px;
+        border: solid 0px white;
+        border-radius: 10px;
+    }
+        to{opacity: 1;
+        background:none;
+        border:solid 0px white;
+        border-radius: 10px;
+    }
+
+    }
+    .content-visible {
+        display: block!important;
+        
+    }
+    .animat {
+        transform: translateX(100px);
+        transition: 1s;
+    }
+
+
+
+
+    // HAPPY CLIENT - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+
+    // RESERVE YOUR TABLE - - - - - - - - - - - - - - - - - - - -
+    .reserve-table {
+        padding: 100px 0px 100px 0px;
+    }
+    .reserve-h {
+        margin-bottom: 35px;
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            font-size: 35px;
+            margin: 0;
+        }
+    }
+    .reserve-img-wr {
+        img {
+            height: 334px;
+        }
+    }
+    .form-wr {
+        form {
+            .reserve-input {
+                padding-top: 25px;
+                padding-left: 10px;
+                .input-wr {
+                    display: flex;
+                    border: none;
+                    border-bottom: solid 1px #a3b0ba;
+                    height: 35px;
+                    margin-bottom: 35px;
+                    input {
+                        border: none;
+                        padding: 0 0 0 0;
+                        font-family: 'Sintony', serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                    i {
+                        padding: 7px 0 0 0;
+                        margin: auto;
+                    }
+                }
+                .input-wr:nth-child(3) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .reserve-info-wr {
+            margin-top: 45px;
+            padding-left: 10px;
+            button {
+                width: 195px;
+                height: 50px;
+                background: #fea100;
+                border: solid 0px;
+                border-radius: 5px;
+                font-family: 'Sintony', serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+            }
+            .reserve-info-text {
+                display: grid;
+                border-right: solid 1px #e1e1e1;
+                font-family: 'Sintony', serif;
+                font-weight: bold;
+                font-size: 13px;
+                margin: 0;
+                padding-top: 7px;
+                width: 170px;
+                span {
+                    color: #fe4c8d;
+                }
+            }
+        }
+    }
+
+
+    // RESERVE YOUR TABLE - - - - - - - - - - - - - - - - - - - -
+
+
+
+    // FOOTER - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    footer {
+        background: #373844;
+        height: 500px;
+        padding: 60px 0 60px 0;
+    }
+    .footer-wr {
+        margin-top: 40px;
+        .footer-navigation {
+            ul {
+                padding: 0;
+                margin-bottom: 0;
+                li {
+                    list-style-type: none;
+                    color: #93989e;
+                    font-family: 'Sintony', serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 9px;
+                }
+            }
+        }
+        .footer-news {
+            form {
+                label {
+                    font-family: 'Sintony', serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #93989e;
+                    margin-bottom: 15px;
+                }
+                .footer-input-wr {
+                    border: solid 1px #52535e;
+                    border-radius: 5px;
+                    height: 50px;   
+                    padding: 10px;
+                    padding-left: 12px;
+                    width: 310px;
+                    display: inline-block;
+                    input {
+                        height: 21px;
+                        background: none;
+                        color: #dde0e2;
+                        border: none;
+                    }
+                    i {
+                        color: #fea100;
+                    }
+                }
+                button {
+                    width: 140px;
+                    height: 50px;
+                    background: #fea100;
+                    color: #ffffff;
+                    font-family: 'Sintony', serif;
+                    font-size: 14px;
+                    border: none;
+                    border-radius: 5px;
+                    margin-left: 5px;
+                }
+            }
+            .footer-media {
+                margin-top: 35px;
+                button {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 50%;
+                    margin-right: 7px;
+                    border: none;
+                    i {
+                        font-size: 18px;
+                        color: white;
+                    }
+                }
+                button:first-child {
+                    background: #3b5998;
+                }
+                button:nth-child(2) {
+                    background: #55acee;
+                }
+                button:nth-child(3) {
+                    background: #dd4b39;
+                }
+            }
+        }
+        .footer-apps {
+            .apps-wr {
+                div {
+                    max-width: 220px;
+                    height: 60px;
+                    border: none;
+                    border-radius: 5px;
+                    background: #52535e;
+                    color: #edf1f3;
+                    font-family: 'Sintony', serif;
+                    font-size: 12px;
+                    p {
+                        width: 110px;
+                        display: grid;
+                        span {
+                            font-family: inherit;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .apps {
+                    padding: 10px;
+                    margin-bottom: 12px;
+                    i {
+                        color: white;
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-h {
+        font-family: 'Playfair Display', serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+
+
+
+    // FOOTER - - - - - - - - - - - - - - - - - - - - - - - - - - 
