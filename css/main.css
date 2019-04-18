@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth; }
+
 .nav-ul {
   list-style-type: none; }
   .nav-ul li {
@@ -41,21 +44,27 @@
       height: 17px;
       margin: auto;
       margin-right: 0; }
-.book-wr .ulList {
-  padding: 0;
-  position: relative; }
-  .book-wr .ulList li {
-    margin: 0;
-    list-style: none;
-    display: none;
-    color: red; }
-.book-wr .ulList:after {
-  content: '▼';
-  font-size: 50%;
-  color: black;
-  position: absolute;
-  bottom: 0px;
-  left: -5px; }
+
+.nav-list-wr {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 5px 0 0 0; }
+  .nav-list-wr .ulList {
+    padding: 0;
+    position: relative; }
+    .nav-list-wr .ulList li {
+      margin: 0;
+      list-style: none;
+      display: none;
+      color: red; }
+  .nav-list-wr .ulList:after {
+    content: '▼';
+    font-size: 50%;
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    left: 126%;
+    top: -15px; }
 
 .opens {
   display: block !important;
@@ -106,7 +115,6 @@
 
 .call-info-wr {
   display: block;
-  height: 100px;
   background: #edf1f3; }
   .call-info-wr .container {
     height: inherit; }
@@ -145,7 +153,7 @@
         .call-info-wr .container .row .sticker-wr .circle-wr {
           position: absolute;
           bottom: 170px;
-          left: 26%;
+          left: 76px;
           z-index: 600; }
           .call-info-wr .container .row .sticker-wr .circle-wr .circle {
             width: 80px;
@@ -155,75 +163,77 @@
             background: black; }
             .call-info-wr .container .row .sticker-wr .circle-wr .circle img {
               margin: 9px 8px 0 13px; }
-      .call-info-wr .container .row .call-info .reviews-wr {
-        margin-right: 30px;
-        width: 210px; }
-        .call-info-wr .container .row .call-info .reviews-wr p {
-          font-family: "Sintony", sans-serif;
-          font-weight: bold;
-          color: #14141d;
-          font-size: 16px;
-          line-height: 1rem;
-          margin-left: 5px !important;
-          margin-right: 17px !important; }
-          .call-info-wr .container .row .call-info .reviews-wr p span {
-            color: #fea100; }
-        .call-info-wr .container .row .call-info .reviews-wr .btn-wr {
-          background: #fea100;
-          width: 45px;
-          height: 45px;
-          border: solid 0px;
-          border-radius: 50%;
-          position: relative; }
-          .call-info-wr .container .row .call-info .reviews-wr .btn-wr button {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 35px;
-            width: 35px;
-            margin: auto;
-            border: solid 1px white;
-            border-radius: 50%;
-            background: none; }
-          .call-info-wr .container .row .call-info .reviews-wr .btn-wr button::after {
-            position: absolute;
-            top: -2px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            content: ">";
+      .call-info-wr .container .row .call-info {
+        height: inherit; }
+        .call-info-wr .container .row .call-info .reviews-wr {
+          margin-right: 30px;
+          width: 210px; }
+          .call-info-wr .container .row .call-info .reviews-wr p {
+            font-family: "Sintony", sans-serif;
             font-weight: bold;
-            font-size: 22px;
-            margin: auto; }
-      .call-info-wr .container .row .call-info .home-deliver {
-        line-height: 1rem;
-        margin-left: 35px;
-        width: 220px;
-        padding: 13px !important;
-        position: relative; }
-        .call-info-wr .container .row .call-info .home-deliver span {
-          font-size: 14px;
-          font-family: "Sintony", sans-serif;
-          font-weight: bold;
-          margin: auto auto auto 10px; }
-          .call-info-wr .container .row .call-info .home-deliver span span {
-            color: #fea100; }
-      .call-info-wr .container .row .call-info .home-deliver:after {
-        content: "";
-        position: absolute;
-        top: 25%;
-        right: 7%;
-        border: solid 1px #7d8587;
-        height: 35px; }
-      .call-info-wr .container .row .call-info .home-deliver:before {
-        content: "";
-        position: absolute;
-        top: -17%;
-        left: 0;
-        border: solid 1px #7d8587;
-        height: 100px; }
+            color: #14141d;
+            font-size: 16px;
+            line-height: 1rem;
+            margin-left: 5px !important;
+            margin-right: 17px !important; }
+            .call-info-wr .container .row .call-info .reviews-wr p span {
+              color: #fea100; }
+          .call-info-wr .container .row .call-info .reviews-wr .btn-wr {
+            background: #fea100;
+            width: 45px;
+            height: 45px;
+            border: solid 0px;
+            border-radius: 50%;
+            position: relative; }
+            .call-info-wr .container .row .call-info .reviews-wr .btn-wr button {
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              height: 35px;
+              width: 35px;
+              margin: auto;
+              border: solid 1px white;
+              border-radius: 50%;
+              background: none; }
+            .call-info-wr .container .row .call-info .reviews-wr .btn-wr button::after {
+              position: absolute;
+              top: -2px;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              content: ">";
+              font-weight: bold;
+              font-size: 22px;
+              margin: auto; }
+        .call-info-wr .container .row .call-info .home-deliver {
+          line-height: 1rem;
+          margin-left: 35px;
+          width: 220px;
+          padding: 13px !important;
+          position: relative; }
+          .call-info-wr .container .row .call-info .home-deliver span {
+            font-size: 14px;
+            font-family: "Sintony", sans-serif;
+            font-weight: bold;
+            margin: auto auto auto 10px; }
+            .call-info-wr .container .row .call-info .home-deliver span span {
+              color: #fea100; }
+        .call-info-wr .container .row .call-info .home-deliver:after {
+          content: "";
+          position: absolute;
+          top: 25%;
+          right: 7%;
+          border: solid 1px #7d8587;
+          height: 35px; }
+        .call-info-wr .container .row .call-info .home-deliver:before {
+          content: "";
+          position: absolute;
+          top: 0%;
+          left: 0;
+          border: solid 1px #7d8587;
+          height: 73px; }
 
 .phone {
   width: 240px;
@@ -231,6 +241,9 @@
   font-size: 32px;
   font-weight: bold;
   color: #14141d; }
+
+.about-wr {
+  margin-top: 60px; }
 
 .about-rest {
   height: 520px; }
@@ -271,7 +284,7 @@
     margin: auto auto auto 45px; }
 
 .img-wr {
-  margin-top: 67px; }
+  margin-top: 40px; }
   .img-wr .imgs img {
     display: block;
     width: 270px;
@@ -283,6 +296,9 @@
 .menu-wr {
   position: relative;
   height: 870px; }
+
+.today-row {
+  width: inherit; }
 
 .today-back-wr {
   height: 440px;
@@ -329,6 +345,29 @@
       margin: auto;
       background: #fea100; }
 
+.special-animation {
+  animation-name: slide;
+  animation-duration: 0.8s;
+  animation-timing-function: linear; }
+
+@keyframes slide {
+  from {
+    top: 0;
+    left: 0; }
+  12.5% {
+    transform: translate(0px, 0px);
+    opacity: 0.7; }
+  25% {
+    transform: translate(-100vh, 0);
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  90% {
+    opacity: 0; }
+  87.5% {
+    transform: translate(100vh, 0); }
+  to {
+    transform: 0px, 0px; } }
 .special-card {
   height: 730px;
   padding: 0;
@@ -342,7 +381,7 @@
     box-shadow: 0px 6px 13px 0px #eaeaea;
     height: 310px; }
     .special-card .card-content .card-info {
-      padding: 50px; }
+      padding: 41px; }
       .special-card .card-content .card-info h5 {
         font-family: 'Playfair Display', serif;
         font-size: 25px;
@@ -357,8 +396,9 @@
       margin: 0;
       border: solid 1px #e1e1e1; }
     .special-card .card-content .card-price {
-      padding: 20px; }
-      .special-card .card-content .card-price p {
+      padding: 20px;
+      margin-top: 15px; }
+      .special-card .card-content .card-price .card-wr p {
         text-align: left;
         font-family: 'Sintony', serif;
         font-weight: bold;
@@ -366,15 +406,15 @@
         width: 90px;
         border-right: solid 1px #e1e1e1;
         margin: 0; }
-        .special-card .card-content .card-price p span {
+        .special-card .card-content .card-price .card-wr p span {
           color: #fe70a4; }
-      .special-card .card-content .card-price h4 {
+      .special-card .card-content .card-price .card-wr h4 {
         font-family: 'Playfair Display', serif;
         font-size: 26px;
         font-weight: bold;
         margin: 0;
         color: #14141d; }
-      .special-card .card-content .card-price h3 {
+      .special-card .card-content .card-price .card-wr h3 {
         font-family: 'Playfair Display', serif;
         font-size: 30px;
         font-weight: bold;
@@ -401,7 +441,8 @@
 .choose-section {
   border-bottom: dashed 1px #a3b0ba;
   padding-bottom: 25px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
 
 .sections ul {
   text-align: center;
@@ -421,7 +462,7 @@
 .dishes-wr {
   border-bottom: solid 1px #eeeeee;
   margin-bottom: 20px;
-  min-width: 350px;
+  min-width: 300px;
   max-width: 530px; }
   .dishes-wr .dishes-name h6 {
     font-family: 'Sintony', sans-serif;
@@ -453,7 +494,8 @@
 .client-wr {
   height: 460px;
   background: url(../backgrounds/happyClientBackground.png) no-repeat;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .client-wr .client-img {
     position: absolute;
     top: -35%;
@@ -596,7 +638,8 @@
 footer {
   background: #373844;
   height: 500px;
-  padding: 60px 0 60px 0; }
+  padding: 60px 0 60px 0;
+  overflow: hidden; }
 
 .footer-wr {
   margin-top: 40px; }
@@ -686,5 +729,56 @@ footer {
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 25px; }
+
+@media screen and (max-width: 576px) and (min-width: 332px) {
+  .book-wr {
+    justify-content: center; } }
+@media screen and (max-width: 992px) {
+  .call-info {
+    font-size: 14px; }
+
+  .phone {
+    font-size: 24px !important; }
+
+  .img-wr .imgs img {
+    width: auto; }
+
+  .sections ul li {
+    margin: 15px; }
+
+  .special-btn-wr {
+    right: 20px !important; }
+
+  .slider-text {
+    text-align: left !important;
+    margin-left: 21px; } }
+@media screen and (max-width: 1199px) {
+  .readMore {
+    justify-content: space-between; }
+    .readMore img {
+      margin: 0; }
+
+  .about-rest {
+    height: 800px; }
+
+  .menu-wr {
+    height: 1700px; } }
+@media screen and (max-width: 369px) {
+  .card-wr p {
+    font-size: 12px !important; }
+  .card-wr h4 {
+    font-size: 18px !important; }
+  .card-wr h3 {
+    font-size: 18px !important; } }
+@media screen and (max-width: 1450px) {
+  .food-advertising {
+    display: none;
+    z-index: 2; } }
+@media screen and (min-width: 767px) {
+  .dishes-wr-last {
+    border-bottom: none; }
+
+  .today-row {
+    width: auto !important; } }
 
 /*# sourceMappingURL=main.css.map */

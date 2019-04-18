@@ -24,10 +24,10 @@
     <header id="header" class="header">
         <div class="container p-0">
             <div class="row">
-                <div class="nav-wrapper col-lg-12 p-0">
+                <div class="nav-wrapper col-xl-12 p-0">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="#">
-                            <div class="col-xl-3 navbar-brand logo-wr mr-xl-5 mr-lg-2">
+                        <a class="navbar-brand mr-lg-0 mr-0" href="#">
+                            <div class="col-xl-3 navbar-brand logo-wr mr-xl-5 mr-lg-2 mr-0">
                                 <img src="pictures/logo.png" alt="LOGO">
                             </div>
                         </a>
@@ -35,41 +35,43 @@
                             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse col-xl-6 ml-lg-0 ml-xl-3 mt-auto mb-auto pl-0"
+                        <div class="collapse navbar-collapse justify-content-center col-xl-6 mt-auto mb-auto "
                             id="navbarText">
-                            <ul class="navbar-nav nav-ul">
-                                <li class="nav-item ">
-                                    <a class="nav-link text-light" href="#">HOME <span
-                                            class="sr-only">(current)</span></a>
+                            <ul class="navbar-nav nav-ul text-center">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
+                                    <a class="nav-link text-light" href="#home">HOME </a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
                                     <a class="nav-link text-light" href="#">MENU</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
                                     <a class="nav-link text-light" href="#">RESERVETION</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
                                     <a class="nav-link text-light" href="#">RECIPE</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
                                     <a class="nav-link text-light" href="#">BLOG</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
                                     <a class="nav-link text-light" href="#">PAGES</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item mr-lg-2 mr-xl-4">
                                     <a class="nav-link text-light" href="#">CONTECT</a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-xl-3 book-wr d-flex justify-content-around p-0">
-                            <span id="title" class="fas fa-shopping-cart ul-list-wr mt-auto mb-auto"></span>
-                            <ul id="ulList" class="ulList">
-                                <li>Торт</li>
-                                <li>Пончик</li>
-                                <li>Пирожное</li>
-                            </ul>
-                            <button class="book-your-table">
+                        <div
+                            class="col-lg-3 col-sm-4 book-wr m-sm-auto d-flex justify-content-lg-between justify-content-md-between justify-content-sm-center p-0">
+                            <div class="nav-list-wr order-md-2 order-lg-1 mr-sm-1">
+                                <span id="title" class="fas fa-shopping-cart ul-list-wr mt-auto mb-auto"></span>
+                                <ul id="ulList" class="ulList">
+                                    <li>Торт</li>
+                                    <li>Пончик</li>
+                                    <li>Пирожное</li>
+                                </ul>
+                            </div>
+                            <button class="book-your-table order-md-1 order-lg-2">
                                 <span class="d-flex justify-content-around">
                                     <img src="./pictures/icon_plate.png" alt="icon_plate">
                                     <p>BOOK YOUR TABLE</p>
@@ -101,8 +103,8 @@
         </div>
         <div class="call-info-wr">
             <div class="container">
-                <div class="row">
-                    <div class="sticker-wr col-lg-3">
+                <div class="row justify-content-around">
+                    <div class="sticker-wr col-xl-3 col-lg-3 col-md-3 col-sm-4">
                         <div class="food-sticker">
                             <div class="line">
                                 <p>Exlore <br> food Menu</p>
@@ -114,8 +116,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="call-info d-flex offset-1 col-8 mt-auto mb-auto">
-                        <div class="reviews-wr d-flex">
+                    <div
+                        class="call-info d-flex offset-xl-1 flex-column flex-md-row ml-lg-2 col-xl-7 col-md-8 col-lg-8 cok-sm-12  mt-auto mb-auto">
+                        <div class="reviews-wr d-flex m-auto">
                             <i class="fas far fa-comments fa-3x m-auto"></i>
                             <p class="m-auto">READ <br> <span>REVIEWS</span></p>
                             <div class="btn-wr mt-auto mb-auto">
@@ -126,7 +129,7 @@
                             <i class="fas fas fa-phone-volume fa-3x"></i>
                             <span>CALL US NOW FOR <br> <span>HOME DELIVER</span></span>
                         </div>
-                        <div class="phone m-auto">
+                        <div class="phone m-auto text-center">
                             <p>1-008 005 006</p>
                         </div>
                     </div>
@@ -135,10 +138,11 @@
         </div>
     </header>
     <section class="about-rest">
+        <a name="home"></a>
         <div class="container">
             <div class="row">
-                <div class="about-wr col-xl-12 d-flex">
-                    <div class="col-xl-6 left-item">
+                <div class="about-wr col-12 flex-xl-row flex-column d-flex">
+                    <div class="col-xl-6 text-lg-center">
                         <div class="text-wr">
                             <h2>
                                 About Restaurent
@@ -158,14 +162,14 @@
                             <img src="./pictures/logo.png" alt="logo">
                         </div>
                     </div>
-                    <div class="col-xl-6 p-0 align-items-center">
+                    <div class="p-0 col-xl-6 text-lg-center">
                         <div class="img-wr d-flex">
-                            <div class="imgs col-auto p-0 mr-2">
+                            <div class="imgs col p-0 mr-2">
                                 <img class="mb-2" src="" alt="">
                                 <img src="" alt="">
                             </div>
 
-                            <div class="imgs col-auto p-0">
+                            <div class="imgs col p-0">
                                 <img class="mb-2" src="" alt="">
                                 <img src="" alt="">
                             </div>
@@ -183,8 +187,8 @@
             </div>
         </div>
         <div class="container today-container p-0">
-            <div class="row">
-                <div class="today-slider-wr p-0 position-relative col-12">
+            <div class="row today-row">
+                <div class=" today-slider-wr p-1 p-md-0 position-relative col-12">
                     <div class="text-center slider-text">
                         <h2>Today Special</h2>
                     </div>
@@ -199,8 +203,8 @@
                             <div id="dotToday" class="thirdPhoto"></div>
                         </div>
                     </div>
-                    <div class="today-spacial col-12 p-0 d-flex">
-                        <div class="col-6 p-0">
+                    <div class="today-spacial col-12 p-0 flex-xl-row flex-column d-flex">
+                        <div class="col-xl-6 col-12 p-0">
                             <div class="special-card">
                                 <img id="cardImgFirst" src="./backgrounds/headerBanner.png" alt="">
                                 <div class="card-content">
@@ -211,25 +215,27 @@
                                         <p id="cardInfoFirst">
                                             Lorem, ipsum dolor sit amet consectetur adipisicing
                                             elit. In similique amet quasi recusandae, error voluptates
-                                            enim praesentium! Architecto doloribus id voluptas veniam.
+                                            enim praesentium!
                                         </p>
                                     </div>
                                     <hr>
-                                    <div class="card-price d-flex justify-content-around">
-                                        <p>
-                                            HOME <span>DELIVERY</span>
-                                        </p>
-                                        <h4>
-                                            1-008 005 006
-                                        </h4>
-                                        <h3 id="cardPriceFirst">
-                                            <sup>$</sup>89.00
-                                        </h3>
+                                    <div class="card-price">
+                                        <div class="card-wr m-sm-4 m-0 d-flex justify-content-around">
+                                            <p>
+                                                HOME <span>DELIVERY</span>
+                                            </p>
+                                            <h4>
+                                                1-008 005 006
+                                            </h4>
+                                            <h3 id="cardPriceFirst">
+                                                <sup>$</sup>89.00
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 p-0 ml-3">
+                        <div class="col-xl-6 col-12 p-0 ml-xl-3 mt-xl-0 mt-5">
                             <div class="special-card">
                                 <img id="cardImgSecond" src="./backgrounds/headerBanner.png" alt="">
                                 <div class="card-content">
@@ -240,20 +246,22 @@
                                         <p id="cardInfoSecond">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             Facere reiciendis distinctio minima deleniti, tempora velit
-                                            ratione, magnam, cupiditate repellat qui.
+                                            ratione, magnam,.
                                         </p>
                                     </div>
                                     <hr>
-                                    <div class="card-price d-flex justify-content-around">
-                                        <p>
-                                            HOME <span>DELIVERY</span>
-                                        </p>
-                                        <h4>
-                                            1-008 005 006
-                                        </h4>
-                                        <h3 id="cardPriceSecond">
-                                            <sup>$</sup>99.00
-                                        </h3>
+                                    <div class="card-price m-sm-4 m-0 ">
+                                        <div class="card-wr d-flex justify-content-around">
+                                            <p>
+                                                HOME <span>DELIVERY</span>
+                                            </p>
+                                            <h4>
+                                                1-008 005 006
+                                            </h4>
+                                            <h3 id="cardPriceSecond">
+                                                <sup>$</sup>99.00
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -286,7 +294,7 @@
                         </div>
                     </div>
                     <div class="section-dishes d-flex flex-wrap col-12">
-                        <div class="col-6">
+                        <div class="col-md-6 col">
                             <div class="dishes-wr d-flex justify-content-between ">
                                 <div class="dishes-name">
                                     <h6>ULTIMATE ORGANIC FRUIT SALAD</h6>
@@ -320,8 +328,8 @@
                                     </h3>
                                 </div>
                             </div>
-                            <div class="dishes-wr d-flex justify-content-between" style="border-bottom: none;">
-                                <div class="dishes-name">
+                            <div class="dishes-wr d-flex justify-content-between dishes-wr-last">
+                                <div class=" dishes-name">
                                     <h6>TOASTED JAM</h6>
                                     <p>Phasellus a ex accumsan sollicitudin</p>
                                 </div>
@@ -332,7 +340,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6 col mt-1">
                             <div class="dishes-wr d-flex justify-content-between ">
                                 <div class="dishes-name">
                                     <h6>ULTIMATE ORGANIC FRUIT SALAD</h6>
@@ -518,7 +526,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="footer-wr col-12 d-flex">
+                <div class="footer-wr col-12 d-flex flex-column">
                     <div class="footer-navigation col-xl-2">
                         <h3 class="footer-h">Navigation</h3>
                         <ul>
